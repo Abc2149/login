@@ -1,7 +1,7 @@
 ---------------------  selenium模拟登录豆瓣  ---------------
 # 输入账号,密码
-wait.until(EC.presence_of_element_located((By.ID,'email'))).send_keys('1345552149@qq.com')
-wait.until(EC.presence_of_element_located((By.ID,'password'))).send_keys('1234567890xg')
+wait.until(EC.presence_of_element_located((By.ID,'email'))).send_keys('username')
+wait.until(EC.presence_of_element_located((By.ID,'password'))).send_keys('password')
 
 # 获取验证码url
 captcha_url = brower.find_element_by_id('captcha_image').get_attribute('src')
